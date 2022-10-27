@@ -5,3 +5,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     type.go()
 })
+
+let hamburger = document.getElementById('hamburger-button')
+hamburger.addEventListener('click', function(){
+    console.log(123)
+})

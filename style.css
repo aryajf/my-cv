@@ -16,6 +16,10 @@ header{
     z-index: 999;
 }
 
+header.hidden{
+    transform: translateX(-300px);
+}
+
 header .profile img{
     width: 120px;
     margin: 15px auto;
@@ -169,4 +173,17 @@ section{
 }
 .about .content ul strong {
     margin-right: 10px;
+}
+
+#hamburger-button{
+    z-index: 999;
+    position: fixed;
+    right: 15px;
+    top: 15px;
+}
+
+#hamburger-button i{
+    font-size: 50px;
+    color: #fff;
+    cursor: pointer;
 }
