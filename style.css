@@ -14,6 +14,7 @@ header{
     padding: 0 15px;
     overflow-y: auto;
     z-index: 999;
+    transition: all 0.5s ease-out;
 }
 
 header.hidden{
@@ -120,6 +121,11 @@ header .profile .social-links a{
 
 #main{
     margin-left: 300px;
+    transition: all 0.5s ease-out;
+}
+
+#main.full-width{
+    margin-left: 0;
 }
 
 section{
@@ -186,4 +192,63 @@ section{
     font-size: 50px;
     color: #fff;
     cursor: pointer;
+}
+
+#hamburger-button.active i{
+    color: black;
+}
+
+.facts .count-box{
+    padding: 30px;
+    width: 100%;
+}
+
+.facts .count-box i {
+    display: block;
+    font-size: 44px;
+    color: #149ddd;
+    float: left;
+    line-height: 0;
+}
+
+.facts .count-box span {
+    font-size: 48px;
+    line-height: 0;
+    display: block;
+    font-weight: 700;
+    color: #050d18;
+    margin-left: 60px;
+}
+
+.facts .count-box p {
+    padding: 30px 0 0 0;
+    margin: 0 0 0 60px;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #122f57;
+}
+
+.section-bg {
+    background: #f5f8fd;
+}
+
+.skills .skill {
+    padding: 0;
+    margin: 0 0 6px 0;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+    font-family: sans-serif;
+    color: #050d18;
+}
+
+.skills .skill .val {
+    float: right;
+    font-style: normal;
+}
+
+@media screen and (max-width:768px){
+    #hero h1 {
+        font-size: 40px;
+    }
 }
