@@ -39,4 +39,5 @@ let message = document.getElementById('message')
 
 message.addEventListener('keyup', function(){
     let pesan = message.value
+    whatsappButton.setAttribute('href', `https://wa.me/6283891684856/?text=${pesan}`)
 })
