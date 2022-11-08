@@ -288,6 +288,32 @@ section{
     color: #173b6c;
 }
 
+.contact label {
+    padding-bottom: 8px;
+    font-weight: 600;
+}
+
+.contact textarea {
+    padding: 10px 15px;
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 14px;
+}
+
+.contact #whatsapp-button {
+    background: #23b32f;
+    border: 0;
+    padding: 10px 24px;
+    color: #fff;
+    border-radius: 4px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.contact #whatsapp-button span{
+    font-size: 25px;
+}
+
 @media screen and (max-width:768px){
     #hero h1 {
         font-size: 40px;

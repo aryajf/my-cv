@@ -32,3 +32,11 @@ window.onscroll = function(){
         hamburger.classList.remove('active')
     }
 }
+
+// Chat ke whatsapp
+let whatsappButton = document.getElementById('whatsapp-button')
+let message = document.getElementById('message')
+
+message.addEventListener('keyup', function(){
+    let pesan = message.value
+})
