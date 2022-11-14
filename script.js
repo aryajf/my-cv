@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
 let hamburger = document.getElementById('hamburger-button')
 let header = document.getElementById('header')
 let main = document.getElementById('main')
+let backButton = document.getElementById('back-to-top')
 let isHidden = 0
 hamburger.addEventListener('click', function(){
     if(isHidden == 0){
@@ -28,10 +29,18 @@ hamburger.addEventListener('click', function(){
 window.onscroll = function(){
     if (document.body.scrollTop > main.offsetTop || document.documentElement.scrollTop > main.offsetTop) {
         hamburger.classList.add('active')
+        backButton.classList.add('show')
     }else{
         hamburger.classList.remove('active')
+        backButton.classList.remove('show')
     }
 }
+
+// Tombol Back To Top
+backButton.addEventListener('click', function(){
+    document.body.scrollTop = 0
+    document.documentElement.scrollTop = 0
+})
 
 // Chat ke whatsapp
 let whatsappButton = document.getElementById('whatsapp-button')
